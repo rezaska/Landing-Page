@@ -1,13 +1,3 @@
-# Landing Page Project
+# Front End Web Development Nanodegree - 2nd Project
 
-## Table of Contents
-
-* [Instructions](#instructions)
-
-## Instructions
-
-The starter project has some HTML and CSS styling to display a static version of the Landing Page project. You'll need to convert this project from a static project to an interactive one. This will require modifying the HTML and CSS files, but primarily the JavaScript file.
-
-To get started, open `js/app.js` and start building out the app's functionality
-
-For specific, detailed instructions, look at the project instructions in the Udacity Classroom.
+his is a project built as an confirmation of finishing third chapter of Front End Web Development NanoDegree. It is a second of five projects which will be done to be able to graduate and receive a Front End Web Development NanoDegree certificate. We needed to convert a static project to an interactive one.
