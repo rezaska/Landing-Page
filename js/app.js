@@ -14,9 +14,8 @@
 */
 
 /**
- * Define Global Variables
- * 
-*/
+ * Define Global Variables */
+const sections = document.querySelector('#navbar__list');
 
 
 /**
