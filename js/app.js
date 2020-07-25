@@ -14,8 +14,9 @@
 */
 
 /**
- * Define Global Variables */
-const sections = document.querySelector('#navbar__list');
+ * Define Global Variables
+ * 
+*/
 
 
 /**
@@ -32,8 +33,45 @@ const sections = document.querySelector('#navbar__list');
  * 
 */
 
+
+function makeActive() {
+    for (const section of sections) {
+      const box = section.getBoundingClientRect();
+      // You can play with the values in the "if" condition to further make it more accurate. 
+      if (box.top <= 150 && box.bottom >= 150) {
+        // Apply active state on the current section and the corresponding Nav link.
+      } else {
+        // Remove active state from other section and corresponding Nav link.
+      }
+    }
+}
+
+
 // build the nav
 
+var link = document.createElement('a');
+link.classList.add('menu__link');
+link.href = '#section1';
+link.textContent = 'Section 1';
+document.getElementById('navbar__list').appendChild(link);
+
+var link = document.createElement('a');
+link.classList.add('menu__link');
+link.href = '#section2';
+link.textContent = 'Section 2';
+document.getElementById('navbar__list').appendChild(link);
+
+var link = document.createElement('a');
+link.classList.add('menu__link');
+link.href = '#section3';
+link.textContent = 'Section 3';
+document.getElementById('navbar__list').appendChild(link);
+
+var link = document.createElement('a');
+link.classList.add('menu__link');
+link.href = '#section4';
+link.textContent = 'Section 4';
+document.getElementById('navbar__list').appendChild(link);
 
 // Add class 'active' to section when near top of viewport
 
@@ -54,4 +92,6 @@ const sections = document.querySelector('#navbar__list');
 
 // Set sections as active
 
-
+document.addEventListener("scroll", function() {
+    makeActive();
+  });
